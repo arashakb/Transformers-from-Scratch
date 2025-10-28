@@ -28,3 +28,4 @@ class PositionalEncoding(nn.Module):
         # Create a vector of shape (seq_Len, 1)
         position = torch.arange(0, seq_len, dtype=torch.float).unsqueeze(1)
         div_term = torch.exp(torch.arange(0, d_model, ))
+        # 
